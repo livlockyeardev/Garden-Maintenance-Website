@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact North Cornwall Gardens for a free garden maintenance quote. Serving Wadebridge, Polzeath and surrounding areas. From £30 per hour." />
+  <title>Get in Touch | North Cornwall Garden Maintenance</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER / NAV
+  ============================================================ -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main navigation">
+        <a class="nav-logo" href="index.html">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <path d="M14 2C7 2 2 10 2 18c0 4 3 8 12 8 9 0 12-4 12-8C26 10 21 2 14 2z" fill="#7abf6b"/>
+            <path d="M14 6c-5 3-8 8-7 14" stroke="#2d5a27" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          North Cornwall Gardens
+        </a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Get in Touch</a></li>
+        </ul>
+        <button class="nav-toggle" id="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       PAGE HEADER
+  ============================================================ -->
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Get in Touch</div>
+      <h1>Get in Touch</h1>
+      <p>Let's talk about your garden — I'd love to help</p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- ---- Form ---- -->
+        <div>
+          <span class="section-label">Enquiry Form</span>
+          <h2>Send Me a Message</h2>
+          <p style="color:var(--text-mid);margin-bottom:1.75rem;">Fill in the form below and I'll get back to you within one working day. Alternatively, give me a call or send a text.</p>
+
+          <div class="contact-form-wrap">
+            <form id="contact-form" novalidate>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name">First Name <span aria-hidden="true" style="color:#c0392b;">*</span></label>
+                  <input type="text" id="first-name" name="first_name" placeholder="Jane" required autocomplete="given-name" />
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last Name <span aria-hidden="true" style="color:#c0392b;">*</span></label>
+                  <input type="text" id="last-name" name="last_name" placeholder="Smith" required autocomplete="family-name" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span aria-hidden="true" style="color:#c0392b;">*</span></label>
+                <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email" />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number (optional)</label>
+                <input type="tel" id="phone" name="phone" placeholder="07700 900000" autocomplete="tel" />
+              </div>
+
+              <div class="form-group">
+                <label for="location">Your Location / Nearest Village <span aria-hidden="true" style="color:#c0392b;">*</span></label>
+                <input type="text" id="location" name="location" placeholder="e.g. Wadebridge, Polzeath, Rock…" required />
+              </div>
+
+              <div class="form-group">
+                <label for="service">Service Required <span aria-hidden="true" style="color:#c0392b;">*</span></label>
+                <select id="service" name="service" required>
+                  <option value="" disabled selected>Please select a service…</option>
+                  <option value="lawn">Lawn Mowing &amp; Edging</option>
+                  <option value="hedges">Hedgecutting</option>
+                  <option value="beds">Bed Maintenance</option>
+                  <option value="exotic">Exotic Planting Design &amp; Care</option>
+                  <option value="tidy">General Garden Tidy-Up</option>
+                  <option value="multiple">Multiple Services / Full Maintenance</option>
+                  <option value="other">Other — please describe below</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="frequency">How Often Do You Need Help?</label>
+                <select id="frequency" name="frequency">
+                  <option value="" disabled selected>Select frequency…</option>
+                  <option value="fortnightly">Every other week (fortnightly)</option>
+                  <option value="weekly">Weekly</option>
+                  <option value="monthly">Monthly</option>
+                  <option value="oneoff">One-off visit</option>
+                  <option value="seasonal">Seasonal (spring/autumn tidy)</option>
+                  <option value="unsure">Not sure yet</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Additional Details <span aria-hidden="true" style="color:#c0392b;">*</span></label>
+                <textarea id="message" name="message" placeholder="Tell me a bit about your garden, what you'd like done, and any particular challenges or ideas you have…" required></textarea>
+              </div>
+
+              <div class="form-group" style="display:flex;align-items:flex-start;gap:.6rem;">
+                <input type="checkbox" id="consent" name="consent" required style="width:auto;margin-top:.25rem;flex-shrink:0;" />
+                <label for="consent" style="font-weight:400;font-size:.88rem;color:var(--text-mid);">
+                  I'm happy for North Cornwall Gardens to store my details and contact me about my enquiry. I understand my information won't be shared with third parties.
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit">Send Enquiry</button>
+
+            </form>
+
+            <div id="form-success" class="form-success" role="alert">
+              <strong>🌿 Thank you for getting in touch!</strong><br />
+              I'll reply within one working day. If it's urgent, please call or text me directly.
+            </div>
+          </div>
+        </div>
+
+        <!-- ---- Contact info ---- -->
+        <div class="contact-info-wrap">
+
+          <div class="info-card">
+            <h3><span class="info-icon">📞</span> Call or Text</h3>
+            <a href="tel:+447700900000" class="phone-number">07700 900 000</a>
+            <p style="font-size:.88rem;color:var(--text-mid);margin:0;">Mon – Sat, 8am – 6pm<br />Text messages welcome anytime</p>
+          </div>
+
+          <div class="info-card">
+            <h3><span class="info-icon">📍</span> Area Covered</h3>
+            <p style="font-size:.9rem;color:var(--text-mid);margin:0;">
+              Wadebridge · Polzeath · Rock · St Minver · Port Isaac · Padstow area<br />
+              <a href="index.html#coverage" style="font-size:.85rem;">View map on home page →</a>
+            </p>
+          </div>
+
+          <div class="info-card">
+            <h3><span class="info-icon">💷</span> Pricing</h3>
+            <table class="pricing-table">
+              <thead>
+                <tr>
+                  <th>Service</th>
+                  <th>From</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1 hr visit (every other week)</td>
+                  <td>£30</td>
+                </tr>
+                <tr>
+                  <td>Lawn mow &amp; edge (small)</td>
+                  <td>£30</td>
+                </tr>
+                <tr>
+                  <td>Lawn mow &amp; edge (large)</td>
+                  <td>£45</td>
+                </tr>
+                <tr>
+                  <td>Hedge cutting (per session)</td>
+                  <td>£40</td>
+                </tr>
+                <tr>
+                  <td>Full garden maintenance</td>
+                  <td>£30/hr</td>
+                </tr>
+                <tr>
+                  <td>Exotic planting design</td>
+                  <td>POA</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="pricing-note">All prices include disposal of green waste. Quotes provided free of charge before any work begins.</p>
+          </div>
+
+          <div class="info-card">
+            <h3><span class="info-icon">🕐</span> Response Times</h3>
+            <p style="font-size:.9rem;color:var(--text-mid);margin:0;">
+              I aim to respond to all enquiries within <strong>one working day</strong>. For urgent requests please call or text directly.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="nav-logo" href="index.html">
+            <svg width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+              <path d="M14 2C7 2 2 10 2 18c0 4 3 8 12 8 9 0 12-4 12-8C26 10 21 2 14 2z" fill="#7abf6b"/>
+              <path d="M14 6c-5 3-8 8-7 14" stroke="#2d5a27" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            North Cornwall Gardens
+          </a>
+          <p>Professional garden maintenance across Wadebridge, Polzeath and the surrounding villages of North Cornwall.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Get in Touch</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="contact.html">Hedgecutting</a></li>
+            <li><a href="contact.html">Lawn Mowing</a></li>
+            <li><a href="contact.html">Bed Maintenance</a></li>
+            <li><a href="contact.html">Exotic Plantings</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 North Cornwall Gardens. Serving Wadebridge, Polzeath &amp; surrounding areas.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
