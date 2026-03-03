@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional garden maintenance across Wadebridge and Polzeath, North Cornwall. Specialising in hedgecutting, lawn mowing, bed maintenance and exotic plantings." />
+  <title>North Cornwall Garden Maintenance | Wadebridge &amp; Polzeath</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/map.css" />
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER / NAV
+  ============================================================ -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main navigation">
+        <a class="nav-logo" href="index.html">
+          <!-- Leaf SVG icon -->
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <path d="M14 2C7 2 2 10 2 18c0 4 3 8 12 8 9 0 12-4 12-8C26 10 21 2 14 2z" fill="#7abf6b"/>
+            <path d="M14 6c-5 3-8 8-7 14" stroke="#2d5a27" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          North Cornwall Gardens
+        </a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Get in Touch</a></li>
+        </ul>
+        <button class="nav-toggle" id="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HERO BANNER
+  ============================================================ -->
+  <section class="hero-banner">
+    <div class="container">
+      <h1>Beautiful Gardens Across<br />Wadebridge &amp; Polzeath</h1>
+      <p class="tagline">Professional, reliable garden care in the heart of North Cornwall — from immaculate lawns to stunning exotic plantings.</p>
+      <div class="badge-row">
+        <span class="badge">✂️ Hedgecutting</span>
+        <span class="badge">🌿 Lawn Mowing</span>
+        <span class="badge">🌸 Bed Maintenance</span>
+        <span class="badge exotic">🌴 Exotic Plantings Specialist</span>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+      &nbsp;
+      <a href="about.html" class="btn btn-outline" style="border-color:rgba(255,255,255,.6);color:#fff;">About Me</a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WORK GALLERY CAROUSEL
+  ============================================================ -->
+  <section class="section section-alt" id="gallery">
+    <div class="container text-center">
+      <span class="section-label">Portfolio</span>
+      <h2>Examples of My Work</h2>
+      <p style="color:var(--text-mid);max-width:600px;margin:0 auto 2rem;">From crisp lawn edges to shaped hedges and lush garden beds — every job is finished to the highest standard.</p>
+    </div>
+    <div class="carousel" role="region" aria-label="Work gallery carousel">
+      <div class="carousel-track">
+
+        <div class="carousel-slide">
+          <div class="slide-placeholder sp1">
+            <!-- Replace with: <img src="images/lawn-mowing.jpg" alt="Freshly mowed lawn in Wadebridge garden" /> -->
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+              <rect x="10" y="50" width="60" height="8" rx="4" fill="rgba(255,255,255,.3)"/>
+              <rect x="5"  y="42" width="70" height="6" rx="3" fill="rgba(255,255,255,.2)"/>
+              <circle cx="40" cy="28" r="14" fill="rgba(255,255,255,.2)"/>
+              <path d="M30 28 Q40 18 50 28" stroke="rgba(255,255,255,.6)" stroke-width="2" fill="none"/>
+            </svg>
+          </div>
+          <div class="slide-caption">
+            <h3>Precision Lawn Mowing</h3>
+            <p>Striped, edged and finished to perfection — Wadebridge, 2024</p>
+          </div>
+        </div>
+
+        <div class="carousel-slide">
+          <div class="slide-placeholder sp2">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+              <rect x="15" y="20" width="50" height="40" rx="4" fill="rgba(255,255,255,.15)"/>
+              <path d="M15 35 Q40 15 65 35" fill="rgba(255,255,255,.25)"/>
+              <rect x="20" y="55" width="40" height="6" rx="3" fill="rgba(255,255,255,.3)"/>
+            </svg>
+          </div>
+          <div class="slide-caption">
+            <h3>Shaped Hedge Cutting</h3>
+            <p>Clean, straight lines on a tall beech hedge — Polzeath, 2024</p>
+          </div>
+        </div>
+
+        <div class="carousel-slide">
+          <div class="slide-placeholder sp3">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+              <circle cx="25" cy="45" r="12" fill="rgba(255,255,255,.2)"/>
+              <circle cx="45" cy="40" r="10" fill="rgba(255,255,255,.2)"/>
+              <circle cx="62" cy="46" r="9"  fill="rgba(255,255,255,.2)"/>
+              <path d="M10 58 Q40 48 70 58" stroke="rgba(255,255,255,.4)" stroke-width="2" fill="none"/>
+            </svg>
+          </div>
+          <div class="slide-caption">
+            <h3>Mixed Planting Bed</h3>
+            <p>Seasonal colour scheme designed and maintained — Rock, 2024</p>
+          </div>
+        </div>
+
+        <div class="carousel-slide">
+          <div class="slide-placeholder sp4">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+              <path d="M40 60 L40 30" stroke="rgba(255,255,255,.5)" stroke-width="3" stroke-linecap="round"/>
+              <path d="M40 30 Q50 18 62 22" stroke="rgba(255,255,255,.6)" stroke-width="2" fill="none"/>
+              <path d="M40 36 Q28 24 18 28" stroke="rgba(255,255,255,.6)" stroke-width="2" fill="none"/>
+              <ellipse cx="40" cy="62" rx="18" ry="5" fill="rgba(255,255,255,.15)"/>
+            </svg>
+          </div>
+          <div class="slide-caption">
+            <h3>Exotic Planting Scheme</h3>
+            <p>Architectural palms and Mediterranean-style border — Polzeath, 2024</p>
+          </div>
+        </div>
+
+      </div><!-- /.carousel-track -->
+
+      <button class="carousel-btn prev" aria-label="Previous slide">&#8249;</button>
+      <button class="carousel-btn next" aria-label="Next slide">&#8250;</button>
+    </div><!-- /.carousel -->
+
+    <div class="carousel-dots" role="tablist" aria-label="Carousel navigation">
+      <button class="carousel-dot active" role="tab" aria-label="Slide 1" aria-selected="true"></button>
+      <button class="carousel-dot" role="tab" aria-label="Slide 2" aria-selected="false"></button>
+      <button class="carousel-dot" role="tab" aria-label="Slide 3" aria-selected="false"></button>
+      <button class="carousel-dot" role="tab" aria-label="Slide 4" aria-selected="false"></button>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES OVERVIEW
+  ============================================================ -->
+  <section class="section" id="services">
+    <div class="container text-center">
+      <span class="section-label">What I Offer</span>
+      <h2>Garden Services</h2>
+      <p style="color:var(--text-mid);max-width:560px;margin:0 auto;">Tailored care for every garden — whether you need a regular visit or a one-off tidy up.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="service-icon">✂️</span>
+          <h3>Hedgecutting</h3>
+          <p>Neat, precise shaping of all hedge types — box, leylandii, beech, laurel and more.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">🌿</span>
+          <h3>Lawn Mowing</h3>
+          <p>Regular cuts with crisp edges, leaving your lawn striped and pristine every time.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon">🌸</span>
+          <h3>Bed Maintenance</h3>
+          <p>Weeding, mulching, deadheading and planting to keep borders looking their best.</p>
+        </div>
+        <div class="service-card" style="border-bottom: 3px solid var(--brown);">
+          <span class="service-icon">🌴</span>
+          <h3>Exotic Plantings</h3>
+          <p>Specialist design and care for palms, bananas, tree ferns and other dramatic exotics.</p>
+        </div>
+      </div>
+      <p class="mt-2" style="color:var(--text-mid);font-size:.95rem;">
+        Services from <strong style="color:var(--green-dark);">£30 per hour</strong> — <a href="contact.html">get in touch for a free quote</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIALS
+  ============================================================ -->
+  <section class="section section-alt" id="testimonials">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Client Reviews</span>
+        <h2>What My Customers Say</h2>
+      </div>
+      <div class="testimonials-grid">
+
+        <article class="testimonial-card">
+          <div class="quote-mark">"</div>
+          <div class="stars">★★★★★</div>
+          <blockquote>"My garden has never looked so good. The hedges are perfectly straight and the lawn is immaculate. Highly recommend to anyone in the Wadebridge area!"</blockquote>
+          <div class="client-name">Sarah T.</div>
+          <div class="client-location">Wadebridge</div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="quote-mark">"</div>
+          <div class="stars">★★★★★</div>
+          <blockquote>"Fantastic job transforming our overgrown beds. The exotic planting scheme is absolutely stunning — neighbours keep stopping to ask about it."</blockquote>
+          <div class="client-name">James &amp; Fiona H.</div>
+          <div class="client-location">Polzeath</div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="quote-mark">"</div>
+          <div class="stars">★★★★★</div>
+          <blockquote>"Reliable, tidy and passionate about plants. Our garden is maintained fortnightly and always looks wonderful. Wouldn't use anyone else."</blockquote>
+          <div class="client-name">Margaret W.</div>
+          <div class="client-location">Rock</div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="quote-mark">"</div>
+          <div class="stars">★★★★★</div>
+          <blockquote>"Transformed our Cornish coastal garden with palms and tree ferns that now thrive. The knowledge of exotic plants is second to none."</blockquote>
+          <div class="client-name">David L.</div>
+          <div class="client-location">St Minver</div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       COVERAGE MAP
+  ============================================================ -->
+  <section class="section" id="coverage">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Service Area</span>
+        <h2>Areas I Cover</h2>
+        <p style="color:var(--text-mid);max-width:600px;margin:0 auto;">I operate across Wadebridge, Polzeath and the surrounding North Cornwall villages — including Rock, St Minver and Port Isaac. Not sure if I cover your area? <a href="contact.html">Just ask!</a></p>
+      </div>
+      <div id="coverage-map" aria-label="Map showing service coverage area around Wadebridge and Polzeath"></div>
+      <p class="map-note">📍 Approximate coverage radius shown. Click the markers to see specific locations.</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA STRIP
+  ============================================================ -->
+  <section class="section section-dark">
+    <div class="container text-center">
+      <h2>Ready for a Beautiful Garden?</h2>
+      <p style="color:rgba(255,255,255,.85);margin-bottom:1.75rem;">From £30 for a one-hour visit. Regular fortnightly bookings available.</p>
+      <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="nav-logo" href="index.html">
+            <svg width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+              <path d="M14 2C7 2 2 10 2 18c0 4 3 8 12 8 9 0 12-4 12-8C26 10 21 2 14 2z" fill="#7abf6b"/>
+              <path d="M14 6c-5 3-8 8-7 14" stroke="#2d5a27" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            North Cornwall Gardens
+          </a>
+          <p>Professional garden maintenance across Wadebridge, Polzeath and the surrounding villages of North Cornwall.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Get in Touch</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="contact.html">Hedgecutting</a></li>
+            <li><a href="contact.html">Lawn Mowing</a></li>
+            <li><a href="contact.html">Bed Maintenance</a></li>
+            <li><a href="contact.html">Exotic Plantings</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 North Cornwall Gardens. Serving Wadebridge, Polzeath &amp; surrounding areas.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN/WLs=" crossorigin=""></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
